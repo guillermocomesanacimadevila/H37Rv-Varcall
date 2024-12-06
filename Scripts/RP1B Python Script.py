@@ -177,6 +177,7 @@ print(f"Distance from first to last indel: {min_distance[0], min_distance[-1]}")
 # Check the VCF file = correct by not mapping the same bp
 alignment_counter = 0
 null_alignment_counter = 0
+
 for index, row in vcf_data_1.iterrows():
     if row["REF"] == row["ALT"]:
         alignment_counter += 1
